@@ -1,0 +1,68 @@
+
+Model Info:
+ function:     stan_lmer
+ family:       gaussian [identity]
+ formula:      Offset ~ Area * Contrast + (1 | Participant)
+ algorithm:    sampling
+ sample:       6000 (posterior sample size)
+ priors:       see help('prior_summary')
+ observations: 90
+ groups:       Participant (10)
+
+Estimates:
+                                             mean   sd     10%    50%    90% 
+(Intercept)                                 2.575  0.931  1.421  2.572  3.725
+AreaV2                                      0.795  0.492  0.172  0.808  1.414
+AreaV3                                      0.793  0.497  0.159  0.792  1.429
+ContrastMid                                -0.185  0.495 -0.816 -0.189  0.451
+ContrastHigh                                0.584  0.512 -0.054  0.577  1.230
+AreaV2:ContrastMid                         -0.583  0.694 -1.465 -0.583  0.305
+AreaV3:ContrastMid                         -0.766  0.703 -1.686 -0.755  0.130
+AreaV2:ContrastHigh                        -0.802  0.706 -1.702 -0.797  0.101
+AreaV3:ContrastHigh                        -0.325  0.721 -1.247 -0.327  0.595
+b[(Intercept) Participant:AAPU]            -2.369  0.930 -3.546 -2.346 -1.213
+b[(Intercept) Participant:ANSI]             1.486  0.932  0.341  1.480  2.642
+b[(Intercept) Participant:DBTE]            -1.832  0.938 -3.008 -1.816 -0.655
+b[(Intercept) Participant:IIGL]            -1.917  0.933 -3.073 -1.920 -0.748
+b[(Intercept) Participant:JNAM]             0.889  0.933 -0.282  0.898  2.044
+b[(Intercept) Participant:KLWL]            -0.723  0.929 -1.889 -0.712  0.405
+b[(Intercept) Participant:LACR]             0.213  0.925 -0.922  0.226  1.362
+b[(Intercept) Participant:LNCL]             6.528  0.935  5.367  6.541  7.673
+b[(Intercept) Participant:LRFA]             0.487  0.930 -0.675  0.504  1.642
+b[(Intercept) Participant:PLTA]            -2.706  0.923 -3.878 -2.682 -1.570
+sigma                                       1.133  0.098  1.013  1.128  1.260
+Sigma[Participant:(Intercept),(Intercept)]  7.774  3.718  4.149  6.853 12.587
+
+Fit Diagnostics:
+           mean   sd    10%   50%   90%
+mean_PPD 2.969  0.168 2.754 2.969 3.182
+
+The mean_ppd is the sample average posterior predictive distribution of the outcome variable (for details see help('summary.stanreg')).
+
+MCMC diagnostics
+                                           mcse  Rhat  n_eff
+(Intercept)                                0.026 1.002 1326 
+AreaV2                                     0.009 1.000 3189 
+AreaV3                                     0.009 1.000 3059 
+ContrastMid                                0.009 1.000 3164 
+ContrastHigh                               0.009 1.000 2979 
+AreaV2:ContrastMid                         0.012 1.000 3213 
+AreaV3:ContrastMid                         0.012 1.000 3444 
+AreaV2:ContrastHigh                        0.012 1.000 3254 
+AreaV3:ContrastHigh                        0.013 1.000 3232 
+b[(Intercept) Participant:AAPU]            0.024 1.002 1456 
+b[(Intercept) Participant:ANSI]            0.025 1.002 1409 
+b[(Intercept) Participant:DBTE]            0.025 1.002 1365 
+b[(Intercept) Participant:IIGL]            0.025 1.002 1376 
+b[(Intercept) Participant:JNAM]            0.025 1.002 1371 
+b[(Intercept) Participant:KLWL]            0.025 1.002 1367 
+b[(Intercept) Participant:LACR]            0.025 1.001 1395 
+b[(Intercept) Participant:LNCL]            0.025 1.003 1390 
+b[(Intercept) Participant:LRFA]            0.025 1.002 1359 
+b[(Intercept) Participant:PLTA]            0.024 1.002 1424 
+sigma                                      0.002 1.001 4174 
+Sigma[Participant:(Intercept),(Intercept)] 0.079 1.000 2195 
+mean_PPD                                   0.002 1.000 6226 
+log-posterior                              0.100 1.001 1580 
+
+For each parameter, mcse is Monte Carlo standard error, n_eff is a crude measure of effective sample size, and Rhat is the potential scale reduction factor on split chains (at convergence Rhat=1).
