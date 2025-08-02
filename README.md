@@ -2,6 +2,10 @@
 
 ## Abstract
 
+## Graphical Abstract
+
+![Figure 1](Figures/Figure 1.png)
+
 Visual cortex exhibits remarkable plasticity, with single neurons in non-human primates expanding their receptive fields under low-contrast conditions. However, whether this adaptive mechanism operates at population scales in humans remains unknown. Using functional magnetic resonance imaging and population receptive field modelling, we measured spatial integration properties across early visual areas (V1, V2, V3) under systematically varied stimulus contrast (3%, 17%, 100%). We found that the relationship between population receptive field size and eccentricity followed a non-monotonic function: spatial integration was maximal at low contrast, minimal at medium contrast, and intermediate at high contrast. Critically, we observed differential contrast sensitivity across visual areas, with the canonical hierarchical organization (V1 < V2 < V3) most pronounced at medium contrast but compressed at extreme contrast levels. These effects were driven primarily by peripheral rather than foveal modulation, suggesting a mechanism that preserves high-acuity central processing while flexibly adjusting spatial integration in the periphery. Our findings provide the first population-level evidence in humans for contrast-dependent spatial plasticity, revealing that cortical processing strategies are dynamically optimized according to stimulus quality; a principle with implications for understanding adaptive visual coding.
 
 ## Project Structure
